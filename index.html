@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="js/jquery-3.0.0.min.js">
+		</script>
+		<script src="js/check.js">
+		</script>
+		<script src="js/Punkt.js">
+		</script>
+	</head>
+	<body>
+		<div id="text1">
+		</div>
+		<div id="text2">
+		</div>
+		<div id="punkt">
+			
+		</div>
+		<script> 
+			p = new Punkt(8, 9);
+			$('#punkt').append("A getA:" + p.getA() +"<br>");
+			$('#punkt').append("A a:" + p.a  +"<br>");
+			$('#punkt').append("A _a:" + p._a  +"<br>");
+			$('#punkt').append("A _b:" + p._b  +"<br>");
+			$('#punkt').append("A proto _a:" + p.__proto__._a  +"<br>");
+			$('#punkt').append("A _c:" + p.getC()  +"<br>");
+
+			console.log(global);
+			console.log(p);
+		</script>
+	</body>
+</html>
